@@ -2,6 +2,12 @@ Revision history for Bencher-Scenarios-DataSah
 
 0.02    2015-12-23 (PERLANCAR)
 
+	- Rename dist from Bencher-Scenario-DataSah to
+	  Bencher-Scenarios-DataSah.
+
+
+0.02    2015-12-23 (PERLANCAR)
+
         - Rename dist from Bencher-Scenario-DataSah to
           Bencher-Scenarios-DataSah.
 
