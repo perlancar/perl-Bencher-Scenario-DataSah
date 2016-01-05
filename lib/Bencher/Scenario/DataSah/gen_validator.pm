@@ -1,4 +1,4 @@
-package Bencher::Scenario::Data::Sah::GenValidator;
+package Bencher::Scenario::DataSah::gen_validator;
 
 # DATE
 # VERSION

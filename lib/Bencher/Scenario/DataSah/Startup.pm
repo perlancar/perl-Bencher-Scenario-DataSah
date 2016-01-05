@@ -1,4 +1,4 @@
-package Bencher::Scenario::Data::Sah::Startup;
+package Bencher::Scenario::DataSah::Startup;
 
 # DATE
 # VERSION

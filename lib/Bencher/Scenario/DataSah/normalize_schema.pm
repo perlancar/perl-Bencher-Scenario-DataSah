@@ -1,4 +1,4 @@
-package Bencher::Scenario::Data::Sah::Normalize;
+package Bencher::Scenario::DataSah::normalize_schema;
 
 # DATE
 # VERSION
