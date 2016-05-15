@@ -14,30 +14,13 @@ our $scenario = {
         },
     ],
     datasets => [
-        {
-            name    => 'type',
-            summary => '',
-            args    => {
-                schema => 'str',
-                'return_type@' => $return_types,
-            },
-        },
-        {
-            name    => 'type+req',
-            summary => '',
-            args    => {
-                schema => 'str*',
-                'return_type@' => $return_types,
-            },
-        },
-        {
-            name    => 'type+2clause',
-            summary => '',
-            args    => {
-                schema => ['str*', min_len=>1, max_len=>10],
-                'return_type@' => $return_types,
-            },
-        },
+        {args => {'return_type@' => $return_types, schema => 'str'}},
+        {args => {'return_type@' => $return_types, schema => 'str*'}},
+        {args => {'return_type@' => $return_types, schema => ['str', len=>8]}},
+        {args => {'return_type@' => $return_types, schema => ['str', min_len=>1, max_len=>10]}},
+        {args => {'return_type@' => $return_types, schema => 'date'}},
+        {args => {'return_type@' => $return_types, schema => ['array', of=>['str', min_len=>1, max_len=>10]]}},
+        {args => {'return_type@' => $return_types, schema => ['array', elems=>['int*', 'str*', 'float*', 're*']]}},
     ],
 };
 
