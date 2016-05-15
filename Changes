@@ -1,5 +1,11 @@
 Revision history for Bencher-Scenarios-DataSah
 
+0.04    2016-05-15 (PERLANCAR)
+
+        - Add/tweak some benchmarks: add benchmarking date (because it contains
+          several coercion rules), etc.
+
+
 0.03    2016-01-05 (PERLANCAR)
 
         - No functional changes.
