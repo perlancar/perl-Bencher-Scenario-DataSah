@@ -39,7 +39,7 @@ our $scenario = {
             args => {
                 schema => ['date'],
                 'data@' => [undef, "abc", 1463371843, "2016-05-16", DateTime->now,
-                            Time::Moment->now,
+                            #Time::Moment->now, # disabled for now, error
                         ],
                 'return_type@' => $return_types,
             },
