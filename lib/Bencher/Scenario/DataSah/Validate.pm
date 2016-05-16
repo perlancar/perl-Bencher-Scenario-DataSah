@@ -3,6 +3,9 @@ package Bencher::Scenario::DataSah::Validate;
 # DATE
 # VERSION
 
+require DateTime;
+require Time::Moment;
+
 my $return_types = ['bool', 'str', 'full'];
 
 our $scenario = {
@@ -18,7 +21,7 @@ our $scenario = {
             name => 'int',
             args => {
                 schema => 'int',
-                'data@' => [1, "a"],
+                'data@' => [undef, 1, "a"],
                 'return_type@' => $return_types,
             },
         },
@@ -26,7 +29,17 @@ our $scenario = {
             name => 'str+2clause',
             args => {
                 schema => ['str', min_len=>1, max_len=>5],
-                'data@' => ["abc", ""],
+                'data@' => [undef, "abc", ""],
+                'return_type@' => $return_types,
+            },
+        },
+        {
+            name => 'date',
+            args => {
+                schema => ['date'],
+                'data@' => [undef, "abc", 1463371843, "2016-05-16", DateTime->now,
+                            #Time::Moment->now,
+                        ],
                 'return_type@' => $return_types,
             },
         },
