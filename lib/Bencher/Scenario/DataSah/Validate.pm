@@ -3,6 +3,7 @@ package Bencher::Scenario::DataSah::Validate;
 # DATE
 # VERSION
 
+require Data::Sah;
 require DateTime;
 require Time::Moment;
 
@@ -34,15 +35,17 @@ our $scenario = {
             },
         },
         {
-            name => 'date',
+            name => 'date (coerce to int(epoch))',
             args => {
                 schema => ['date'],
                 'data@' => [undef, "abc", 1463371843, "2016-05-16", DateTime->now,
-                            #Time::Moment->now,
+                            Time::Moment->now,
                         ],
                 'return_type@' => $return_types,
             },
         },
+        # XXX: date (coerce to DateTime)
+        # XXX: date (coerce to Time::Moment)
     ],
 };
 
