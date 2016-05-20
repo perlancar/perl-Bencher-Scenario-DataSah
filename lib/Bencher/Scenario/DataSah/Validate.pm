@@ -35,7 +35,7 @@ our $scenario = {
             },
         },
         {
-            name => 'date (coerce to int(epoch))',
+            name => 'date (coerce to float(epoch))',
             args => {
                 schema => ['date'],
                 'data@' => [undef, "abc", 1463371843, "2016-05-16", DateTime->now,

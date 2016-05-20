@@ -17,10 +17,10 @@ our $scenario = {
     ],
     datasets => [
         {
-            name => 'date (coerce to int(epoch))',
+            name => 'date (coerce to float(epoch))',
             args => {
                 type => 'date',
-                coerce_to => 'int(epoch)',
+                coerce_to => 'float(epoch)',
             },
         },
         {
