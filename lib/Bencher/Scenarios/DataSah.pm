@@ -9,3 +9,6 @@ package Bencher::Scenarios::DataSah;
 =head1 SEE ALSO
 
 L<Data::Sah>
+
+L<Bencher::Scenarios::DataSahVSTypeTiny> - split to keep the number of
+benchmarks for a single distribution small (and minimize building time).
