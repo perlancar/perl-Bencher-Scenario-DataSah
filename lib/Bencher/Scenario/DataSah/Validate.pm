@@ -11,6 +11,9 @@ my $return_types = ['bool', 'str', 'full'];
 
 our $scenario = {
     summary => 'Benchmark validation',
+    modules => {
+        'Data::Sah' => {version=>'0.84'},
+    },
     participants => [
         {
             name => 'gen_validator',
