@@ -1,6 +1,8 @@
 package Bencher::Scenario::DataSah::gen_validator;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 my $return_types = ['bool', 'str', 'full'];
@@ -17,6 +19,8 @@ our $scenario = {
         },
     ],
     datasets => [
+        {args => {'return_type@' => $return_types, schema => 'int'}},
+        {args => {'return_type@' => $return_types, schema => 'int*'}},
         {args => {'return_type@' => $return_types, schema => 'str'}},
         {args => {'return_type@' => $return_types, schema => 'str*'}},
         {args => {'return_type@' => $return_types, schema => ['str', len=>8]}},

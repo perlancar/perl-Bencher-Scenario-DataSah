@@ -30,6 +30,14 @@ our $scenario = {
             },
         },
         {
+            name => 'int*',
+            args => {
+                schema => 'int*',
+                'data@' => [undef, 1, "a"],
+                'return_type@' => $return_types,
+            },
+        },
+        {
             name => 'str+2clause',
             args => {
                 schema => ['str', min_len=>1, max_len=>5],
